@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for proper device rendering -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Contacts Page</title>
+    <!-- A brief description of our poetic journey -->
+    <meta name="description" content="A well-structured HTML5 document featuring a list, external image, contact table, and a registration form.">
+</head>
+<body>
+    <!-- Ordered list with Roman Numerals -->
+    <section>
+        <h2>Steps for Registration</h2>
+        <ol type="I">
+            <li>Enter your personal details</li>
+            <li>Verify your email address</li>
+            <li>Create a secure password</li>
+            <li>Choose your country</li>
+            <li>Submit and enjoy the journey</li>
+        </ol>
+    </section>
+    
+    <!-- External Image from Pexels.com -->
+    <section>
+        <h2>Featured Image</h2>
+        <!-- Using an external image from pexels.com. This image URL is an example and may be updated as needed. -->
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="A scenic view from Pexels" width="600">
+    </section>
+    
+    <!-- Table of 5 Contacts -->
+    <section>
+        <h2>Contact Directory</h2>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Maple Street</td>
+                    <td>+1234567890</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak Avenue</td>
+                    <td>+2345678901</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Bob Brown</td>
+                    <td>789 Pine Road</td>
+                    <td>+3456789012</td>
+                    <td>bob@example.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Green</td>
+                    <td>321 Birch Boulevard</td>
+                    <td>+4567890123</td>
+                    <td>alice@example.com</td>
+                </tr>
+                <tr>
+                    <td>Charlie Black</td>
+                    <td>654 Cedar Lane</td>
+                    <td>+5678901234</td>
+                    <td>charlie@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Registration Form -->
+    <section>
+        <h2>Register Now</h2>
+        <form action="submit_registration.php" method="post">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <br><br>
+            
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <br><br>
+            
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <br><br>
+            
+            <!-- Date Field (Date of Birth or Registration Date) -->
+            <label for="dob">Date:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            
+            <!-- Dropdown: Country Selection -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Select your country--</option>
+                <option value="USA">United States</option>
+                <option value="CAN">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <option value="AUS">Australia</option>
+            </select>
+            <br><br>
+            
+            <!-- Radio Buttons: Gender Selection -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </fieldset>
+            <br>
+            
+            <!-- Checkboxes: Interests -->
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+            </fieldset>
+            <br>
+            
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
